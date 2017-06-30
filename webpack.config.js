@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: './js/bundle.js'
     },
-    watch: true,
+    watch: false,
     devServer: {
         contentBase: './dist',
         port: 88,
@@ -22,12 +22,19 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new CopyWebpackPlugin([{
+            from: 'src/css',
+            to: 'css/'
+        }, {
             from: 'node_modules/bootstrap/dist/css',
             to: 'vendor/bootstrap/css/'
         }, {
             from: 'node_modules/bootstrap/dist/fonts',
             to: 'vendor/bootstrap/fonts/'
         }]),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html'
@@ -36,9 +43,14 @@ module.exports = {
             assets: ['vendor/bootstrap/css/bootstrap.min.css'],
             append: false
         }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
+        new HtmlWebpackIncludeAssetsPlugin({
+            assets: ['css/common.css'],
+            append: true
+        }),
+        new HtmlWebpackIncludeAssetsPlugin({
+            files: ['index.html'],
+            assets: ['css/main.css'],
+            append: true
         })
     ]
 };
