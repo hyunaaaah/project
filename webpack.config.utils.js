@@ -46,6 +46,9 @@ function getPlugins(pages) {
             from: 'src/css',
             to: 'css/'
         }, {
+            from: 'src/img',
+            to: 'img/'
+        }, {
             from: 'node_modules/bootstrap/dist/css',
             to: 'vendor/bootstrap/css/'
         }, {
