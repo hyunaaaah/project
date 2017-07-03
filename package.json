@@ -8,9 +8,7 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
