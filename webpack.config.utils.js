@@ -72,10 +72,6 @@ function getPlugins(pages) {
         new HtmlWebpackIncludeAssetsPlugin({
             assets: ['vendor/font-awesome/css/font-awesome.min.css'],
             append: true
-        }),
-        new HtmlWebpackIncludeAssetsPlugin({
-            assets: ['css/common.css'],
-            append: true
         })
     ];
 

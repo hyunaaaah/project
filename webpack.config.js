@@ -1,19 +1,18 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const utils = require('./webpack.config.utils');
 
 const port = {
-    web: 88,
+    web: 89,
     was: 8080
 };
 
 const pages = [{
     html: 'index',
     script: 'main',
-    css: 'main'
 }, {
     html: 'sub',
     script: 'sub',
-    css: 'sub'
 }];
 
 module.exports = {
@@ -21,6 +20,18 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: './js/[name].bundle.js'
+    },
+    module: {
+        rules: [{
+            test: /\.less$/,
+            use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+            }, {
+                loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: "less-loader" // compiles Less to CSS
+            }]
+        }]
     },
     devServer: {
         contentBase: './dist',
