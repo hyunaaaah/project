@@ -1,5 +1,5 @@
 const path = require('path');
-const utils = require('./webpack.utils');
+const utils = require('./webpack.config.utils');
 
 const port = {
     web: 88,
