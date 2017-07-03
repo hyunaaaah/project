@@ -23,8 +23,12 @@ function getHtmlPlugins(pages) {
 
         plugins.push(new HtmlWebpackPlugin({
             filename: page.html + '.html',
-            template: 'src/' + page.html + '.html',
-            chunks: [page.script]
+            template: 'src/' + page.html + '.hbs',
+            chunks: [page.script],
+            minify: {
+                collapseWhitespace: true,
+                preserveLineBreaks: false
+            }
         }));
 
         if (page.css) {
@@ -43,11 +47,9 @@ function getPlugins(pages) {
     var plugins = [
         new CleanWebpackPlugin(['dist']),
         new CopyWebpackPlugin([{
-            from: 'src/css',
-            to: 'css/'
-        }, {
             from: 'src/img',
-            to: 'img/'
+            to: 'img/',
+            ignore: ['.gitignore']
         }, {
             from: 'node_modules/bootstrap/dist/css',
             to: 'vendor/bootstrap/css/'

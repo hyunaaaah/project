@@ -19,7 +19,7 @@ module.exports = {
     entry: utils.getEntry(pages),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: './js/[name].bundle.js'
+        filename: './js/[name]-[chunkhash].bundle.js'
     },
     module: {
         rules: [{
@@ -31,6 +31,9 @@ module.exports = {
             }, {
                 loader: "less-loader" // compiles Less to CSS
             }]
+        }, {
+            test: /\.hbs$/,
+            loader: 'handlebars-loader'
         }]
     },
     devServer: {
