@@ -12,7 +12,8 @@ const pages = [{
     css: 'main'
 }, {
     html: 'sub',
-    script: 'sub'
+    script: 'sub',
+    css: 'sub'
 }];
 
 module.exports = {
