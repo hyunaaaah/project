@@ -1,4 +1,4 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const utils = require('./webpack.config.utils');
 
@@ -24,7 +24,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.less$/,
-            use: ExtractTextPlugin.extract({
+            use: ExtractTextWebpackPlugin.extract({
                 fallback: 'style-loader',
                 use: [{
                     loader: 'css-loader',
