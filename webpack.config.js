@@ -3,7 +3,7 @@ const path = require('path');
 const utils = require('./webpack.config.utils');
 
 const port = {
-    web: 89,
+    web: 88,
     was: 8080
 };
 
@@ -19,6 +19,7 @@ module.exports = {
     entry: utils.getEntry(pages),
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: 'http://localhost:' + port.web + '/',
         filename: './js/[name].[chunkhash].bundle.js'
     },
     module: {

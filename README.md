@@ -4,10 +4,6 @@
 
 1. install [nodejs](http://nodejs.org)
 
-1. install webpack globally
-
-  `npm install --global webpack`
-
 ## Usage
 
 ```
@@ -16,6 +12,8 @@ cd webpack-starter
 npm install
 npm start
 ```
+
+connect http://localhost:88 using web browser
 
 ## License
 
