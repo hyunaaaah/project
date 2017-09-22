@@ -3,19 +3,23 @@ require('../less/main.less');
 
 // 시원한
 $('#cool').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#DAF1EF');
+    $('#cool .keyword').show();
+
+    $(this).attr('style', 'background-color:#DAF1EF; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#DAF1EF');
 
-    $('#warm').attr('style', 'background-color:#D5ECEA');
-    $('#relax').attr('style', 'background-color:#CFE5E3');
-    $('#sweet').attr('style', 'background-color:#C7DCDA');
-    $('#citrus').attr('style', 'background-color:#B3C6C4');
-    $('#mature').attr('style', 'background-color:#ABBDBB');
-    $('#sexy').attr('style', 'background-color:#92A1A0');
-    $('#heavy').attr('style', 'background-color:#7D8A89');
+    $('#warm').attr('style', 'background-color:#D5ECEA; width: 70px');
+    $('#relax').attr('style', 'background-color:#CFE5E3; width: 70px');
+    $('#sweet').attr('style', 'background-color:#C7DCDA; width: 70px');
+    $('#citrus').attr('style', 'background-color:#B3C6C4; width: 70px');
+    $('#mature').attr('style', 'background-color:#ABBDBB; width: 70px');
+    $('#sexy').attr('style', 'background-color:#92A1A0; width: 70px');
+    $('#heavy').attr('style', 'background-color:#7D8A89; width: 70px');
 });
 
 $('#cool').on('mouseout', function () {
+    $('#cool .keyword').hide();
+
     $(this).attr('style', 'background-color:#e0e0e0');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -30,19 +34,24 @@ $('#cool').on('mouseout', function () {
 
 // 포근한
 $('#warm').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#E4D8BE');
+    $('#warm .keyword').show();
+
+
+    $(this).attr('style', 'background-color:#E4D8BE; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#E4D8BE');
 
-    $('#cool').attr('style', 'background-color:#EEE1C6');
-    $('#relax').attr('style', 'background-color:#DDD1B8');
-    $('#sweet').attr('style', 'background-color:#D2C7AF');
-    $('#citrus').attr('style', 'background-color:#CFC4AD');
-    $('#mature').attr('style', 'background-color:#C1B8A1');
-    $('#sexy').attr('style', 'background-color:#B0A693');
-    $('#heavy').attr('style', 'background-color:#A89F8C');
+    $('#cool').attr('style', 'background-color:#EEE1C6; width: 70px');
+    $('#relax').attr('style', 'background-color:#DDD1B8; width: 70px');
+    $('#sweet').attr('style', 'background-color:#D2C7AF; width: 70px');
+    $('#citrus').attr('style', 'background-color:#CFC4AD; width: 70px');
+    $('#mature').attr('style', 'background-color:#C1B8A1; width: 70px');
+    $('#sexy').attr('style', 'background-color:#B0A693; width: 70px');
+    $('#heavy').attr('style', 'background-color:#A89F8C; width: 70px');
 });
 
 $('#warm').on('mouseout', function () {
+    $('#warm .keyword').hide();
+
     $(this).attr('style', 'background-color:#bebebe');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -57,19 +66,23 @@ $('#warm').on('mouseout', function () {
 
 // 차분한
 $('#relax').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#B57581');
+    $('#relax .keyword').show();
+
+    $(this).attr('style', 'background-color:#B57581; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#B57581');
 
-    $('#cool').attr('style', 'background-color:#CB8390');
-    $('#warm').attr('style', 'background-color:#C17D8A');
-    $('#sweet').attr('style', 'background-color:#AB6F7A');
-    $('#citrus').attr('style', 'background-color:#A36974');
-    $('#mature').attr('style', 'background-color:#935F69');
-    $('#sexy').attr('style', 'background-color:#83555D');
-    $('#heavy').attr('style', 'background-color:#7D5159');
+    $('#cool').attr('style', 'background-color:#CB8390; width: 70px');
+    $('#warm').attr('style', 'background-color:#C17D8A; width: 70px');
+    $('#sweet').attr('style', 'background-color:#AB6F7A; width: 70px');
+    $('#citrus').attr('style', 'background-color:#A36974; width: 70px');
+    $('#mature').attr('style', 'background-color:#935F69; width: 70px');
+    $('#sexy').attr('style', 'background-color:#83555D; width: 70px');
+    $('#heavy').attr('style', 'background-color:#7D5159; width: 70px');
 });
 
 $('#relax').on('mouseout', function () {
+    $('#relax .keyword').hide();
+
     $(this).attr('style', 'background-color:#9e9e9e');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -84,19 +97,23 @@ $('#relax').on('mouseout', function () {
 
 // 달콤한
 $('#sweet').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#B9B2DB');
+    $('#sweet .keyword').show();
+
+    $(this).attr('style', 'background-color:#B9B2DB; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#B9B2DB');
 
-    $('#cool').attr('style', 'background-color:#D2CAF9');
-    $('#warm').attr('style', 'background-color:#CEC6F4');
-    $('#relax').attr('style', 'background-color:#C7BFEC');
-    $('#citrus').attr('style', 'background-color:#A099BD');
-    $('#mature').attr('style', 'background-color:#9993B6');
-    $('#sexy').attr('style', 'background-color:#908BAB');
-    $('#heavy').attr('style', 'background-color:#7A7691');
+    $('#cool').attr('style', 'background-color:#D2CAF9; width: 70px');
+    $('#warm').attr('style', 'background-color:#CEC6F4; width: 70px');
+    $('#relax').attr('style', 'background-color:#C7BFEC; width: 70px');
+    $('#citrus').attr('style', 'background-color:#A099BD; width: 70px');
+    $('#mature').attr('style', 'background-color:#9993B6; width: 70px');
+    $('#sexy').attr('style', 'background-color:#908BAB; width: 70px');
+    $('#heavy').attr('style', 'background-color:#7A7691; width: 70px');
 });
 
 $('#sweet').on('mouseout', function () {
+    $('#sweet .keyword').hide();
+
     $(this).attr('style', 'background-color:#7f7f7f');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -111,19 +128,23 @@ $('#sweet').on('mouseout', function () {
 
 // 상큼한
 $('#citrus').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#DDDD72');
+    $('#citrus .keyword').show();
+
+    $(this).attr('style', 'background-color:#DDDD72; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#DDDD72');
 
-    $('#cool').attr('style', 'background-color:#F4F47E');
-    $('#warm').attr('style', 'background-color:#F0F07B');
-    $('#relax').attr('style', 'background-color:#EEEE7C');
-    $('#sweet').attr('style', 'background-color:#E4E476');
-    $('#mature').attr('style', 'background-color:#D6D66E');
-    $('#sexy').attr('style', 'background-color:#CECE6A');
-    $('#heavy').attr('style', 'background-color:#ADAD59');
+    $('#cool').attr('style', 'background-color:#F4F47E; width: 70px');
+    $('#warm').attr('style', 'background-color:#F0F07B; width: 70px');
+    $('#relax').attr('style', 'background-color:#EEEE7C; width: 70px');
+    $('#sweet').attr('style', 'background-color:#E4E476; width: 70px');
+    $('#mature').attr('style', 'background-color:#D6D66E; width: 70px');
+    $('#sexy').attr('style', 'background-color:#CECE6A; width: 70px');
+    $('#heavy').attr('style', 'background-color:#ADAD59; width: 70px');
 });
 
 $('#citrus').on('mouseout', function () {
+    $('#citrus .keyword').hide();
+
     $(this).attr('style', 'background-color:#5e5e5e');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -138,19 +159,23 @@ $('#citrus').on('mouseout', function () {
 
 // 성숙한
 $('#mature').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#CE5F4B');
+    $('#mature .keyword').show();
+
+    $(this).attr('style', 'background-color:#CE5F4B; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#CE5F4B');
 
-    $('#cool').attr('style', 'background-color:#FB745B');
-    $('#warm').attr('style', 'background-color:#F67259');
-    $('#relax').attr('style', 'background-color:#E36953');
-    $('#sweet').attr('style', 'background-color:#DB6550');
-    $('#citrus').attr('style', 'background-color:#D4624D');
-    $('#sexy').attr('style', 'background-color:#C85C49');
-    $('#heavy').attr('style', 'background-color:#BF5846');
+    $('#cool').attr('style', 'background-color:#FB745B; width: 70px');
+    $('#warm').attr('style', 'background-color:#F67259; width: 70px');
+    $('#relax').attr('style', 'background-color:#E36953; width: 70px');
+    $('#sweet').attr('style', 'background-color:#DB6550; width: 70px');
+    $('#citrus').attr('style', 'background-color:#D4624D; width: 70px');
+    $('#sexy').attr('style', 'background-color:#C85C49; width: 70px');
+    $('#heavy').attr('style', 'background-color:#BF5846; width: 70px');
 });
 
 $('#mature').on('mouseout', function () {
+    $('#mature .keyword').hide();
+
     $(this).attr('style', 'background-color:#404040');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -165,19 +190,23 @@ $('#mature').on('mouseout', function () {
 
 // 섹시한
 $('#sexy').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#4A2867');
+    $('#sexy .keyword').show();
+
+    $(this).attr('style', 'background-color:#4A2867; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#4A2867');
 
-    $('#cool').attr('style', 'background-color:#8146B3');
-    $('#warm').attr('style', 'background-color:#7440A2');
-    $('#relax').attr('style', 'background-color:#703C9C');
-    $('#sweet').attr('style', 'background-color:#613487');
-    $('#citrus').attr('style', 'background-color:#5B317E');
-    $('#mature').attr('style', 'background-color:#522C72');
-    $('#heavy').attr('style', 'background-color:#462661');
+    $('#cool').attr('style', 'background-color:#8146B3; width: 70px');
+    $('#warm').attr('style', 'background-color:#7440A2; width: 70px');
+    $('#relax').attr('style', 'background-color:#703C9C; width: 70px');
+    $('#sweet').attr('style', 'background-color:#613487; width: 70px');
+    $('#citrus').attr('style', 'background-color:#5B317E; width: 70px');
+    $('#mature').attr('style', 'background-color:#522C72; width: 70px');
+    $('#heavy').attr('style', 'background-color:#462661; width: 70px');
 });
 
 $('#sexy').on('mouseout', function () {
+    $('#sexy .keyword').hide();
+
     $(this).attr('style', 'background-color:#212121');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
@@ -192,19 +221,23 @@ $('#sexy').on('mouseout', function () {
 
 // 무거운
 $('#heavy').on('mouseover', function () {
-    $(this).attr('style', 'background-color:#1C2B50');
+    $('#heavy .keyword').show();
+
+    $(this).attr('style', 'background-color:#1C2B50; width: 500px; height:500px');
     $('.main-word').attr('style', 'color:#1C2B50');
 
-    $('#cool').attr('style', 'background-color:#3D5DAD');
-    $('#warm').attr('style', 'background-color:#3A57A3');
-    $('#relax').attr('style', 'background-color:#344F93');
-    $('#sweet').attr('style', 'background-color:#2D4784');
-    $('#citrus').attr('style', 'background-color:#2D447F');
-    $('#mature').attr('style', 'background-color:#273B6E');
-    $('#sexy').attr('style', 'background-color:#21325D');
+    $('#cool').attr('style', 'background-color:#3D5DAD; width: 70px');
+    $('#warm').attr('style', 'background-color:#3A57A3; width: 70px');
+    $('#relax').attr('style', 'background-color:#344F93; width: 70px');
+    $('#sweet').attr('style', 'background-color:#2D4784; width: 70px');
+    $('#citrus').attr('style', 'background-color:#2D447F; width: 70px');
+    $('#mature').attr('style', 'background-color:#273B6E; width: 70px');
+    $('#sexy').attr('style', 'background-color:#21325D; width: 70px');
 });
 
 $('#heavy').on('mouseout', function () {
+    $('#heavy .keyword').hide();
+
     $(this).attr('style', 'background-color:#000000');
     $('.main-word').attr('style', 'color:#9e9e9e');
 
