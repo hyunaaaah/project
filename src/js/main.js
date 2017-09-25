@@ -18,6 +18,7 @@ function perfumeColor() {
 
                 var subBoxColorList = colorList[i].subColor;
 
+
                 if (mainBoxID === 'cool') {
                     $('#warm').css('background-color', subBoxColorList[0].color);
                     $('#relax').css('background-color', subBoxColorList[1].color);
