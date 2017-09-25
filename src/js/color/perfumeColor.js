@@ -1,0 +1,145 @@
+module.exports = [{
+    mainColorID: 'cool',
+    mainColor: '#DAF1EF',
+    subColor: [{
+        color: '#D5ECEA'
+    }, {
+        color: '#CFE5E3'
+    }, {
+        color: '#C7DCDA'
+    }, {
+        color: '#B3C6C4'
+    }, {
+        color: '#ABBDBB'
+    }, {
+        color: '#92A1A0'
+    }, {
+        color: '#7D8A89'
+    }]
+}, {
+    mainColorID: 'warm',
+    mainColor: '#E4D8BE',
+    subColor: [{
+        color: '#EEE1C6'
+    }, {
+        color: '#DDD1B8'
+    }, {
+        color: '#D2C7AF'
+    }, {
+        color: '#CFC4AD'
+    }, {
+        color: '#C1B8A1'
+    }, {
+        color: '#B0A693'
+    }, {
+        color: '#A89F8C'
+    }]
+}, {
+    mainColorID: 'relax',
+    mainColor: '#B57581',
+    subColor: [{
+        color: '#CB8390'
+    }, {
+        color: '#C17D8A'
+    }, {
+        color: '#AB6F7A'
+    }, {
+        color: '#A36974'
+    }, {
+        color: '#935F69'
+    }, {
+        color: '#83555D'
+    }, {
+        color: '#7D5159'
+    }]
+}, {
+    mainColorID: 'sweet',
+    mainColor: '#B9B2DB',
+    subColor: [{
+        color: '#D2CAF9'
+    }, {
+        color: '#CEC6F4'
+    }, {
+        color: '#C7BFEC'
+    }, {
+        color: '#A099BD'
+    }, {
+        color: '#9993B6'
+    }, {
+        color: '#908BAB'
+    }, {
+        color: '#7A7691'
+    }]
+}, {
+    mainColorID: 'citrus',
+    mainColor: '#DDDD72',
+    subColor: [{
+        color: '#F4F47E'
+    }, {
+        color: '#F0F07B'
+    }, {
+        color: '#EEEE7C'
+    }, {
+        color: '#E4E476'
+    }, {
+        color: '#D6D66E'
+    }, {
+        color: '#CECE6A'
+    }, {
+        color: '#ADAD59'
+    }]
+}, {
+    mainColorID: 'mature',
+    mainColor: '#CE5F4B',
+    subColor: [{
+        color: '#FB745B'
+    }, {
+        color: '#F67259'
+    }, {
+        color: '#E36953'
+    }, {
+        color: '#DB6550'
+    }, {
+        color: '#D4624D'
+    }, {
+        color: '#C85C49'
+    }, {
+        color: '#BF5846'
+    }]
+}, {
+    mainColorID: 'sexy',
+    mainColor: '#4A2867',
+    subColor: [{
+        color: '#8146B3'
+    }, {
+        color: '#7440A2'
+    }, {
+        color: '#703C9C'
+    }, {
+        color: '#613487'
+    }, {
+        color: '#5B317E'
+    }, {
+        color: '#522C72'
+    }, {
+        color: '#462661'
+    }]
+}, {
+    mainColorID: 'heavy',
+    mainColor: '#1C2B50',
+    subColor: [{
+        color: '#3D5DAD'
+    }, {
+        color: '#3A57A3'
+    }, {
+        color: '#344F93'
+    }, {
+        color: '#2D4784'
+    }, {
+        color: '#2D447F'
+    }, {
+        color: '#273B6E'
+    }, {
+        color: '#21325D'
+    }]
+}];
