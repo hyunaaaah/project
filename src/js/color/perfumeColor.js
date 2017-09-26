@@ -92,9 +92,9 @@ module.exports = [{
     mainColorID: 'mature',
     mainColor: '#CE5F4B',
     subColor: [{
-        color: '#FB745B'
+        color: '#fa745b'
     }, {
-        color: '#F67259'
+        color: '#e76b54'
     }, {
         color: '#E36953'
     }, {
