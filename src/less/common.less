@@ -1,10 +1,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 //header
+@header-height: 120px;
 header {
   position: relative;
   width: 100%;
-  height: 120px;
+  height: @header-height;
   font-family: 'Noto Sans KR', sans-serif;
   border-bottom: solid 2px #bebebe;
 }
@@ -15,6 +16,7 @@ header {
   width: 120px;
   height: 100px;
   background-color: #9e9e9e;
+  cursor: pointer;
 }
 
 .header-menu {
@@ -31,6 +33,28 @@ header {
   font-size: 13px;
   font-weight: bold;
   cursor: pointer;
+}
+
+//body
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-sentence {
+  margin: 30px auto;
+  font-size: 48px;
+  text-align: center;
+
+  .sentence {
+    margin: 10px;
+    letter-spacing: -3px;
+  }
+}
+
+.main-word {
+  color: #9e9e9e;
+  font-size: 70px;
+  letter-spacing: -10px;
 }
 
 //footer
