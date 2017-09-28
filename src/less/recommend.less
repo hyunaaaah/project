@@ -18,9 +18,10 @@
 }
 
 .detail-condition {
-  position: absolute;
-  top: @header-height + 30px;
+  position: fixed;
+  top: @header-height + 10px;
   right: 0px;
+  text-align: right;
 
   .detail-button {
     display: inline-block;
@@ -38,9 +39,13 @@
   }
 
   .detail-box {
+    position: relative;
     display: none;
     width: 300px;
+    height: 500px;
     color: #ffffff;
+    text-align: left;
+    vertical-align: top;
     background-color: #9e9e9e;
   }
 }
@@ -56,8 +61,17 @@
   display: inline-block;
   width: 120px;
   cursor: pointer;
-  
+
   span {
     padding-left: 5px;
   }
+}
+
+.select-search {
+  position: absolute;
+  bottom: 0px;
+  padding: 20px;
+  width: 300px;
+  color: #9e9e9e;
+  text-align: right;
 }
