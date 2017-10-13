@@ -49,3 +49,7 @@ $('.logo').on('click', function () {
 $('.recommend').on('click', function () {
    location.href = './recommend.html';
 });
+
+$('.about').on('click', function () {
+   location.href = './about.html';
+});

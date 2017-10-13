@@ -16,6 +16,9 @@ const pages = [{
 }, {
     html: 'recommend',
     script: 'recommend'
+}, {
+    html: 'about',
+    script: 'about'
 }];
 
 module.exports = {

@@ -10,12 +10,11 @@ header {
   border-bottom: solid 2px #bebebe;
 }
 
-.logo {
+.logo img {
   display: inline-block;
   margin: 10px 10px 10px 20px;
   width: 120px;
   height: 100px;
-  background-color: #9e9e9e;
   cursor: pointer;
 }
 
@@ -36,7 +35,9 @@ header {
 }
 
 //body
+@font-color: #9e9e9e;
 body {
+  position: relative;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -52,7 +53,7 @@ body {
 }
 
 .main-word {
-  color: #9e9e9e;
+  color: @font-color;
   font-size: 70px;
   letter-spacing: -10px;
 }

@@ -19,9 +19,10 @@
 
 .detail-condition {
   position: fixed;
-  top: @header-height + 10px;
+  top: 240px;
   right: 0px;
   text-align: right;
+  z-index: 10000;
 
   .detail-button {
     display: inline-block;
@@ -74,4 +75,12 @@
   width: 300px;
   color: #9e9e9e;
   text-align: right;
+}
+
+.layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }

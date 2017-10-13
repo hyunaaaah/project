@@ -2,9 +2,20 @@ require('../less/recommend.less')
 require('../js/main');
 
 $('.detail-button').on('click', function () {
-    $('.detail-box').css('display', 'inline-block');
+    openDetail();
 });
 
-$('.perfume-list').on('click', function () {
-   $('.detail-box').css('display', 'none');
+$('.detail-layer').on('click', function () {
+    closeDetail();
 });
+
+function openDetail() {
+    $('.detail-layer').addClass('layer');
+
+    $('.detail-box').css('display', 'inline-block');
+}
+
+function closeDetail() {
+    $('.detail-layer').removeClass('layer');
+    $('.detail-box').css('display', 'none');
+}
