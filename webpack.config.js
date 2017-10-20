@@ -17,8 +17,11 @@ const pages = [{
     html: 'recommend',
     script: 'recommend'
 }, {
-    html: 'about',
-    script: 'about'
+    html: 'login',
+    script: 'login'
+}, {
+    html: 'info',
+    script: 'info'
 }];
 
 module.exports = {

@@ -1,0 +1,235 @@
+@import 'common.less';
+
+@info-font-color: #f3f3f3;
+@info-font-bg: #494949;
+
+//향수 노트 버튼
+.note-btns {
+  display: inline-block;
+  padding: 0px;
+  width: 12.5%;
+  text-align: center;
+  color: @info-font-color;
+  vertical-align: top;
+
+  li {
+    margin: 20px 0px;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    list-style: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: @info-font-bg;
+    cursor: pointer;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+//향수 종류 버튼
+.division-btns {
+  display: inline-block;
+  padding: 0px;
+  width: 12.5%;
+  text-align: center;
+  color: @info-font-color;
+  vertical-align: bottom;
+
+  li {
+    margin: 20px 0px;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    list-style: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: @info-font-bg;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+//버튼에 대한 내용부분
+.contents-box {
+  display: inline-block;
+  padding: 20px;
+  width: 75%;
+  min-height: 500px;
+  font-size: 18px;
+  vertical-align: top;
+
+  .main-word {
+    line-height: 20px;
+  }
+}
+
+//노트 부분
+.note {
+  padding-left: 30px;
+}
+
+.note-contents {
+  display: none;
+}
+
+.note-contents.active {
+  display: inline-block;
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+//종류 부분
+.division {
+  margin-left: 35%;
+}
+
+.division-contents {
+  display: none;
+  text-align: left;
+
+  .percent {
+    margin-top: 10px;
+  }
+
+  .question {
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+
+  #mean {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 10px 0px;
+  }
+}
+
+.division-exam {
+  padding-left: 0px;
+}
+
+.division-exam > li{
+  display: inline-block;
+
+  img {
+    width: 200px;
+  }
+}
+
+.division-contents.active {
+  display: inline-block;
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+//계열 부분
+.type {
+  margin: 30px auto;
+  width: 75%;
+  height: 700px;
+}
+
+.type-title {
+  padding-top: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: @info-font-color;
+  background-color: @info-font-bg;
+}
+
+.type-contents {
+  background-color: #f6c2cc;
+
+  div {
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+  }
+}
+
+.type-name {
+  width: 100%;
+  color: @info-font-color;
+  font-size: 17px;
+  text-align: center;
+}
+
+.type-text {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+#type-floral {
+  width: 38%;
+  background-color: red;
+  vertical-align: top;
+}
+
+#type-woody {
+  width: 27%;
+  height: 200px;
+  vertical-align: top;
+  background-color: orange;
+}
+
+#type-green {
+  margin-right: 0px;
+  width: 33.3%;
+  background-color: darkslateblue;
+}
+
+#type-citrus {
+  width: 32%;
+  background-color: royalblue;
+  vertical-align: middle;
+}
+
+#type-powdery {
+  width: 30%;
+  background-color: wheat;
+  vertical-align: middle;
+}
+
+#type-chupre {
+  width: 20.3%;
+  background-color: rosybrown;
+  vertical-align: top;
+}
+
+#type-fruity {
+  margin-right: 0px;
+  width: 15.15%;
+  background-color: coral;
+  vertical-align: middle;
+}
+
+#type-oriental {
+  width: 40%;
+  background-color: mediumpurple;
+  vertical-align: top;
+}
+
+#type-aqua {
+  width: 18%;
+  background-color: crimson;
+}
+
+#type-aldehyde {
+  margin-right: 0%;
+  width: 24.45%;
+  background-color: silver;
+}

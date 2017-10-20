@@ -51,5 +51,9 @@ $('.recommend').on('click', function () {
 });
 
 $('.about').on('click', function () {
-   location.href = './about.html';
+   location.href = './info.html';
+});
+
+$('.login').on('click', function () {
+   location.href = './login.html';
 });
