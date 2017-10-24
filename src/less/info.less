@@ -155,9 +155,9 @@
 .type-contents {
   background-color: #f6c2cc;
 
-  div {
+  & > div {
     display: inline-block;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 0px;
   }
 }
 
@@ -166,6 +166,7 @@
   color: @info-font-color;
   font-size: 17px;
   text-align: center;
+  background-color: @info-font-bg;
 }
 
 .type-text {
@@ -173,17 +174,27 @@
   font-size: 15px;
 }
 
-#type-floral {
-  width: 38%;
-  background-color: red;
+//향수 계열 상세부분
+#type-woody {
+  margin-right: 10px;
+  width: 320px;
+  height: 350px;
   vertical-align: top;
+  border: solid 1px @info-font-bg;
+  background-image: url('../img/missDior.jpg');
+  background-size: cover;
+  background-position: center 50px;
 }
 
-#type-woody {
-  width: 27%;
-  height: 200px;
+#type-floral {
+  width: 450px;
+  height: 400px;
   vertical-align: top;
-  background-color: orange;
+  border: solid 1px @info-font-bg;
+
+  .type-exam {
+    width: 200px;
+  }
 }
 
 #type-green {
@@ -232,4 +243,35 @@
   margin-right: 0%;
   width: 24.45%;
   background-color: silver;
+}
+
+#type-musk {
+  margin-left: 0px;
+  width: 45%;
+  background-color: greenyellow;
+}
+
+#type-spicy {
+  width: 30%;
+  background-color: hotpink;
+}
+
+#type-oceanic {
+  width: 20%;
+  background-color: darkseagreen;
+}
+
+#type-fougere {
+  width: 30%;
+  background-color: darkblue;
+}
+
+#type-tabacco-seater {
+  width: 30%;
+  background-color: sandybrown;
+}
+
+#type-gourmand {
+  width: 35%;
+  background-color: palegoldenrod;
 }
