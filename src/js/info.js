@@ -41,6 +41,9 @@ $('.division-btns > li').on('click', function () {
 });
 
 //계열 기능
-$('.type-title').on('click', function () {
 
+$('#type-woody').on('click', function () {
+
+    var it = $(this).parents('.type-name').find('tr td .type-text');
+    it.addClass('active');
 });

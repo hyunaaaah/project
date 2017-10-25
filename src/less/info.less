@@ -141,11 +141,9 @@
 .type {
   margin: 30px auto;
   width: 75%;
-  height: 700px;
 }
 
 .type-title {
-  padding-top: 5px;
   font-size: 20px;
   text-align: center;
   color: @info-font-color;
@@ -153,125 +151,46 @@
 }
 
 .type-contents {
-  background-color: #f6c2cc;
+  background-color: coral;
 
-  & > div {
-    display: inline-block;
-    margin: 10px 0px;
+  .type-name {
+    margin: 12px 0px;
+    width: 100%;
+  }
+
+  tr td {
+    width: 20%;
+    height: 200px;
+    font-size: 18px;
+    color: @info-font-color;
+    text-align: center;
+    background-color: @info-font-bg;
+    border: solid 1px #404040;
+    cursor: pointer;
   }
 }
 
-.type-name {
-  width: 100%;
-  color: @info-font-color;
-  font-size: 17px;
-  text-align: center;
-  background-color: @info-font-bg;
+#type-text {
+  color: @info-font-bg;
+  background-color: #ffffff;
+
+  .type-topic {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .type-exam {
+    margin-top: 30px;
+    width: 300px;
+  }
 }
 
 .type-text {
-  padding-left: 10px;
-  font-size: 15px;
+  display: none;
 }
 
-//향수 계열 상세부분
-#type-woody {
-  margin-right: 10px;
-  width: 320px;
-  height: 350px;
-  vertical-align: top;
-  border: solid 1px @info-font-bg;
-  background-image: url('../img/missDior.jpg');
-  background-size: cover;
-  background-position: center 50px;
+.type-text.active {
+  display: inline-block;
 }
 
-#type-floral {
-  width: 450px;
-  height: 400px;
-  vertical-align: top;
-  border: solid 1px @info-font-bg;
-
-  .type-exam {
-    width: 200px;
-  }
-}
-
-#type-green {
-  margin-right: 0px;
-  width: 33.3%;
-  background-color: darkslateblue;
-}
-
-#type-citrus {
-  width: 32%;
-  background-color: royalblue;
-  vertical-align: middle;
-}
-
-#type-powdery {
-  width: 30%;
-  background-color: wheat;
-  vertical-align: middle;
-}
-
-#type-chupre {
-  width: 20.3%;
-  background-color: rosybrown;
-  vertical-align: top;
-}
-
-#type-fruity {
-  margin-right: 0px;
-  width: 15.15%;
-  background-color: coral;
-  vertical-align: middle;
-}
-
-#type-oriental {
-  width: 40%;
-  background-color: mediumpurple;
-  vertical-align: top;
-}
-
-#type-aqua {
-  width: 18%;
-  background-color: crimson;
-}
-
-#type-aldehyde {
-  margin-right: 0%;
-  width: 24.45%;
-  background-color: silver;
-}
-
-#type-musk {
-  margin-left: 0px;
-  width: 45%;
-  background-color: greenyellow;
-}
-
-#type-spicy {
-  width: 30%;
-  background-color: hotpink;
-}
-
-#type-oceanic {
-  width: 20%;
-  background-color: darkseagreen;
-}
-
-#type-fougere {
-  width: 30%;
-  background-color: darkblue;
-}
-
-#type-tabacco-seater {
-  width: 30%;
-  background-color: sandybrown;
-}
-
-#type-gourmand {
-  width: 35%;
-  background-color: palegoldenrod;
-}
