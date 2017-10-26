@@ -42,18 +42,22 @@ function perfumeColor() {
 
 perfumeColor();
 
+$('.choice').on('click', function () {
+    location.href = './recommend.html';
+});
+
 $('.logo').on('click', function () {
     location.href = './';
 });
 
 $('.recommend').on('click', function () {
-   location.href = './recommend.html';
+    location.href = './recommend.html';
 });
 
 $('.about').on('click', function () {
-   location.href = './info.html';
+    location.href = './info.html';
 });
 
 $('.login').on('click', function () {
-   location.href = './login.html';
+    location.href = './login.html';
 });

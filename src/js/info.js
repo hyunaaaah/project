@@ -4,6 +4,7 @@ require('../js/main');
 //note 기능
 $('.note-btns > li').on('click', function () {
     $('.division-contents').removeClass('active');
+    $('.type-contents').removeClass('active');
 
     var noteBtns = $(this).parent('.note-btns').find('li');
     var noteIndex = $(this).index();
@@ -28,6 +29,7 @@ $('.question').on('mouseout', function () {
 //division 기능
 $('.division-btns > li').on('click', function () {
     $('.note-contents').removeClass('active');
+    $('.type-contents').removeClass('active');
 
     var divisionBtns = $(this).parent('.division-btns').find('li');
     var divisionIndex = $(this).index();
@@ -41,9 +43,14 @@ $('.division-btns > li').on('click', function () {
 });
 
 //계열 기능
+$('#type').on('click', function () {
+   $('.type-contents').addClass('active');
+});
 
-$('#type-woody').on('click', function () {
+$('.type-btns').on('click', function () {
+    var typeBtnID = $(this).attr('id');
 
-    var it = $(this).parents('.type-name').find('tr td .type-text');
-    it.addClass('active');
+    var typeContents = $(this).parents('body').find('.type-text#' + typeBtnID);
+    $('.type-text').removeClass('active');
+    typeContents.addClass('active');
 });
