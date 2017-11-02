@@ -6,34 +6,42 @@
 </head>
 <body>
 {{> template/header }}
-<div class="main-sentence">로그인</div>
-<div class="login-box">
-    <div class="login-section">
-        <div class="login-id">
-            <div>아이디</div>
-            <input id="login"><br>
-        </div>
-        <div class="login-pass">
-            <div>비밀번호</div>
-            <input type="password" id="pass">
-        </div>
-        <div class="btn-box">
-            <button class="login-btn">로그인</button>
-            <button class="member-btn">회원가입</button>
-        </div>
-        <div class="auto-login">
-            <input type="checkbox" id="auto-login">자동로그인
-        </div>
-        <div class="search-member">
-            아이디 / 비밀번호 찾기
-        </div>
+<ul class="member">
+    <li class="login-form">
+        <div>로그인</div>
+    </li>
+    <li class="join-form">
+        <div>회원가입</div>
+    </li>
+</ul>
+<div class="member-login-form active">
+    <div class="login-box">
+        <div>아이디</div>
+        <input>
+        <div>비밀번호</div>
+        <input type="password">
+        <button>로그인</button>
     </div>
-    <div class="social-login">
-        <div>SNS로그인</div>
-        <div class="sns-btn">
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-instagram"></i>
-        </div>
+    <div class="login-check">
+        <input type="checkbox"> 자동로그인
+    </div>
+    <div class="login-search">
+        <span id="id-search">아이디 찾기</span>
+        <span>|</span>
+        <span id="pass-search">비밀번호 찾기</span>
+    </div>
+</div>
+<div class="member-join-form">
+    <div class="login-box">
+        <div>이메일 주소</div>
+        <input>
+        <div>비밀번호</div>
+        <input type="password">
+        <button>회원가입</button>
+    </div>
+    <div class="login-check">
+        <input type="checkbox"> 약관동의
+        <div>약관보기</div>
     </div>
 </div>
 {{> template/footer }}
