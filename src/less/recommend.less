@@ -1,4 +1,5 @@
 @import 'common.less';
+@import 'info.less';
 
 .perfume-list {
   margin: 0px auto;
@@ -84,3 +85,52 @@
   width: 100%;
   height: 100%;
 }
+
+.perfume-info {
+  cursor: pointer;
+}
+
+.info-detail-view {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.select-detail-view {
+  position: relative;
+  margin: 20% auto;
+  width: 50%;
+  //height: 500px;
+  font-size: 18px;
+  background-color: darksalmon;
+
+  > div {
+    padding: 20px;
+  }
+
+  span {
+    font-weight: bold;
+    border-bottom: solid 1px @info-font-bg;
+  }
+
+  .detail {
+    padding: 20px 10px;
+
+    &.intro {
+      height: 200px;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    border: solid 1px @info-font-bg;
+  }
+}
+
+
+
+

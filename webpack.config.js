@@ -22,6 +22,9 @@ const pages = [{
 }, {
     html: 'info',
     script: 'info'
+}, {
+    html: 'perfumeInfo',
+    script: 'perfumeInfo'
 }];
 
 module.exports = {
