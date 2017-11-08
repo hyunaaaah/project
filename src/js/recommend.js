@@ -1,31 +1,49 @@
-require('../less/recommend.less')
+require('../less/recommend.less');
 require('../js/main');
 
+var perfumeListTemplate = require('../template/list.hbs');
+var perfumeListImg = require('../js/list/listIMG');
+
+var selectBrandTemplate = require('../template/detailSelect.hbs');
+var brandList = require('../js/list/listBrand');
+
 $('.detail-button').on('click', function () {
-    openDetail();
+    $('.detail-box').css('display', 'inline-block');
+    $('.detail-layer').addClass('layer');
+
+    for (var i=0; i<brandList.brand.length; i++) {
+        var brandSelect = selectBrandTemplate(brandList.brand[i]);
+
+        console.log(brandSelect);
+    }
 });
 
 $('.detail-layer').on('click', function () {
-    closeDetail();
+    $('.detail-box').css('display', 'none');
+
 });
 
-function openDetail() {
-    $('.detail-layer').addClass('layer');
 
-    $('.detail-box').css('display', 'inline-block');
+function imgList() {
+    for(var i=0; i<perfumeListImg.length; i++) {
+        var perfumeList = perfumeListTemplate(perfumeListImg[i]);
+
+        $('.perfume-list').append(perfumeList);
+    }
 }
-
-function closeDetail() {
-    $('.detail-layer').removeClass('layer');
-    $('.detail-box').css('display', 'none');
-}
-
+imgList();
 
 $('.perfume-info').on('click', function () {
+    var clickIndex = $(this).index();
+
     $('.detail-view').addClass('info-detail-view');
     var perfumeIntro = require('../template/introduce.hbs');
-    $('.detail-view').append(perfumeIntro);
+    var color = perfumeListImg[clickIndex].color;
+    var detail = perfumeIntro(perfumeListImg[clickIndex]);
 
+    $('.detail-view').append(detail);
+
+    $('.select-detail-view').css('background-color', color);
     $('.perfume-list').css('opacity', '0.5');
 });
 

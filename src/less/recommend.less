@@ -20,62 +20,60 @@
 
 .detail-condition {
   position: fixed;
-  top: 240px;
+  top: 30%;
   right: 0px;
-  text-align: right;
-  z-index: 10000;
+}
 
-  .detail-button {
-    display: inline-block;
-    width: 30px;
-    height: 120px;
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    line-height: 30px;
-    background-color: #5e5e5e;
-    vertical-align: top;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    cursor: pointer;
-  }
+.detail-button {
+  display: inline-block;
+  padding: 5px 0px 5px 8px;
+  width: 30px;
+  height: 110px;
+  letter-spacing: 10px;
+  color: @info-font-color;
+  font-size: 17px;
+  background-color: @info-font-bg;
+  writing-mode: tb-lr;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  vertical-align: top;
+  cursor: pointer;
+}
 
-  .detail-box {
-    position: relative;
-    display: none;
-    width: 300px;
-    height: 500px;
-    color: #ffffff;
-    text-align: left;
-    vertical-align: top;
-    background-color: #9e9e9e;
+.detail-box {
+  display: inline-block;
+  width: 600px;
+  height: 500px;
+  background-color: #9e9e9e;
+
+  > div {
+    width: 50%;
+    height: 100%;
   }
 }
 
-.detail-type {
-  margin: 20px 20px 15px 20px;
-  font-size: 15px;
+.select-title {
+  display: inline-block;
+  margin: 10px 10px 0px 10px;
+  width: 90%;
+  font-size: 17px;
   text-align: center;
-  border: solid 1px #ffffff;
+  border: solid 1px @info-font-bg;
+}
+
+.detail-select {
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  //height: 150px;
+  background-color: red;
+  overflow: auto;
 }
 
 .detail-select > li {
   display: inline-block;
-  width: 120px;
-  cursor: pointer;
-
-  span {
-    padding-left: 5px;
-  }
-}
-
-.select-search {
-  position: absolute;
-  bottom: 0px;
-  padding: 20px;
-  width: 300px;
-  color: #9e9e9e;
-  text-align: right;
+  width: 50%;
+  list-style: none;
 }
 
 .layer {
@@ -127,6 +125,7 @@
     top: 20%;
     right: 10%;
     width: 300px;
+    height: 250px;
     border: solid 1px @info-font-bg;
   }
 }

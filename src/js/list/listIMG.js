@@ -1,0 +1,39 @@
+module.exports = [{
+    name: 'Jadore',
+    brand: 'Dior',
+    intro: '여성스러운 향수',
+    image: 'jadore.jpg',
+    color: 'red'
+}, {
+    name: 'missDior',
+    image: 'missDior.jpg',
+    color: 'blue'
+}, {
+    name: 'diorHomme',
+    image: 'diorHomme.jpg',
+    color: 'gray'
+}, {
+    name: 'blueDeChanel',
+    image: 'blueDeChanel.jpg',
+    color: 'yellow'
+}, {
+    name: 'n\'5',
+    image: 'n\'5.jpg',
+    color: 'orange'
+}, {
+    name: 'n\'5leau',
+    image: 'n\'5leau.jpg',
+    color: 'green'
+}, {
+    name: 'n\'5leau',
+    image: 'n\'5leau.jpg',
+    color: 'green'
+}, {
+    name: 'n\'5leau',
+    image: 'n\'5leau.jpg',
+    color: 'green'
+} ,{
+    name: 'n\'5leau',
+    image: 'n\'5leau.jpg',
+    color: 'green'
+}];
