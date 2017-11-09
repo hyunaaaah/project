@@ -15,7 +15,6 @@ $('.note-btns > li').on('click', function () {
     var noteContents = $(this).parents('body').find('.note-contents');
     noteContents.removeClass('active');
     $(noteContents[noteIndex]).addClass('active');
-
 });
 
 //부향률 설명
