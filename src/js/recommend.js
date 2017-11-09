@@ -4,23 +4,54 @@ require('../js/main');
 var perfumeListTemplate = require('../template/list.hbs');
 var perfumeListImg = require('../js/list/listIMG');
 
-var selectBrandTemplate = require('../template/detailSelect.hbs');
-var brandList = require('../js/list/listBrand');
+var selectTemplate = require('../template/detailSelect.hbs');
+var brandList = require('./list/listDetail');
 
 $('.detail-button').on('click', function () {
     $('.detail-box').css('display', 'inline-block');
     $('.detail-layer').addClass('layer');
 
     for (var i=0; i<brandList.brand.length; i++) {
-        var brandSelect = selectBrandTemplate(brandList.brand[i]);
+        var brandSelect = selectTemplate(brandList.brand[i]);
 
-        console.log(brandSelect);
+        $('.detail-select.brand').append(brandSelect)
+    }
+
+    for (var i=0; i<brandList.image.length; i++) {
+        var imageSelect = selectTemplate(brandList.image[i]);
+
+        $('.detail-select.image').append(imageSelect);
+    }
+
+    for (var i=0; i<brandList.season.length; i++) {
+        var seasonSelect = selectTemplate(brandList.season[i]);
+
+        $('.detail-select.season').append(seasonSelect);
+    }
+
+    for (var i=0; i<brandList.gender.length; i++) {
+        var genderSelect = selectTemplate(brandList.gender[i]);
+
+        $('.detail-select.gender').append(genderSelect);
+    }
+
+    for (var i=0; i<brandList.type.length; i++) {
+        var typeSelect = selectTemplate(brandList.type[i]);
+
+        $('.detail-select.perfume-type').append(typeSelect);
+    }
+
+    for (var i=0; i<brandList.age.length; i++) {
+        var ageSelect = selectTemplate(brandList.age[i]);
+
+        $('.detail-select.age').append(ageSelect);
     }
 });
 
 $('.detail-layer').on('click', function () {
     $('.detail-box').css('display', 'none');
-
+    $('.detail-select').empty();
+    $('.detail-layer').removeClass('layer');
 });
 
 

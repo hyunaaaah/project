@@ -1,4 +1,4 @@
-require('../less/info.less')
+require('../less/info.less');
 require('../js/main');
 
 //note 기능

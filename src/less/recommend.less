@@ -22,6 +22,7 @@
   position: fixed;
   top: 30%;
   right: 0px;
+  height: 450px;
 }
 
 .detail-button {
@@ -41,12 +42,14 @@
 }
 
 .detail-box {
-  display: inline-block;
+  position: relative;
+  display: none;
   width: 600px;
-  height: 500px;
+  height: 450px;
   background-color: #9e9e9e;
 
   > div {
+    display: inline-block;
     width: 50%;
     height: 100%;
   }
@@ -62,18 +65,37 @@
 }
 
 .detail-select {
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 10px 0px 10px;
+  padding: 0px 10px 10px 17px;
   width: 90%;
-  //height: 150px;
-  background-color: red;
+  height: 115px;
   overflow: auto;
+
+  &.season, &.gender {
+    height: 60px;
+  }
 }
 
 .detail-select > li {
   display: inline-block;
-  width: 50%;
+  margin-bottom: 1px;
+  width: 48%;
   list-style: none;
+
+  input {
+    vertical-align: middle;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+}
+
+.search-button button {
+  position: absolute;
+  top: 415px;
+  right: 18px;
+  text-align: right;
 }
 
 .layer {
