@@ -1,49 +1,76 @@
 require('../less/info.less');
 require('../js/main');
 
-//note 기능
-$('.note-btns > li').on('click', function () {
-    $('.division-contents').removeClass('active');
-    $('.type-contents').removeClass('active');
+require('../less/sub.less');
 
-    var noteBtns = $(this).parent('.note-btns').find('li');
-    var noteIndex = $(this).index();
 
-    noteBtns.removeClass('active');
-    $(noteBtns[noteIndex]).addClass('active');
-
-    var noteContents = $(this).parents('body').find('.note-contents');
-    noteContents.removeClass('active');
-    $(noteContents[noteIndex]).addClass('active');
+$('.goto-main').on('click', function() {
+    location.href = 'index.html';
 });
 
-//부향률 설명
-$('.question').on('mouseover', function () {
-    $('#mean').toggle();
-});
-$('.question').on('mouseout', function () {
-    $('#mean').toggle();
-});
+//note기능
+var noteData = require('../js/info/note');
+var noteTemplate = require('../template/noteInfo.hbs');
+
+$('.note-contents').append(noteTemplate(noteData[0]));
+
+function noteDataInsert() {
+    $('.note-btns > li').on('click', function () {
+        if ($(this).attr('id') === 'type') {
+            $('.type-contents').addClass('active');
+            $('.note-contents').empty();
+            $('.division-contents').empty();
+            typeSelect();
+        }
+        else {
+
+            $('.note-contents').empty();
+            $('.type-contents').removeClass('active');
+            $('.division-contents').empty();
+
+            var noteBtn = $(this).index();
+
+            var note = noteTemplate(noteData[noteBtn]);
+
+            $('.note-contents').append(note);
+        }
+    });
+}
+
+noteDataInsert();
 
 //division 기능
-$('.division-btns > li').on('click', function () {
-    $('.note-contents').removeClass('active');
-    $('.type-contents').removeClass('active');
+var divisionData = require('../js/info/division');
 
-    var divisionBtns = $(this).parent('.division-btns').find('li');
-    var divisionIndex = $(this).index();
+function divisionDatainsert() {
+    $('.division-btns > li').on('click', function () {
+        $('.note-contents').empty();
+        $('.type-contents').removeClass('active');
+        $('.division-contents').empty();
 
-    divisionBtns.removeClass('active');
-    $(divisionBtns[divisionIndex]).addClass('active');
+        var divisionBtn = $(this).index();
 
-    var divisionContents = $(this).parents('body').find('.division-contents');
-    divisionContents.removeClass('active');
-    $(divisionContents[divisionIndex]).addClass('active');
-});
+        var divisionTemplate = require('../template/divisionInfo.hbs');
+        var division = divisionTemplate(divisionData[divisionBtn]);
+
+        $('.division-contents').append(division);
+
+        //부향률 설명
+        $('.question').on('mouseover', function () {
+            $('#mean').toggle();
+        });
+        $('.question').on('mouseout', function () {
+            $('#mean').toggle();
+        });
+    });
+}
+
+divisionDatainsert();
 
 //계열 기능
+/*
 $('#type').on('click', function () {
-   $('.type-contents').addClass('active');
+    $('.type-contents').addClass('active');
 });
 
 $('.type-btns').on('click', function () {
@@ -53,3 +80,22 @@ $('.type-btns').on('click', function () {
     $('.type-text').removeClass('active');
     typeContents.addClass('active');
 });
+*/
+
+function typeSelect() {
+    var typeData = require('../template/typeInfo.hbs');
+    $('.type-contents').append(typeData);
+
+    $('.type-btns').on('click', function () {
+        var typeBtnID = $(this).attr('id');
+
+        var typeContents = $(this).parents('body').find('.type-text#' + typeBtnID);
+        $('.type-text').removeClass('active');
+        typeContents.addClass('active');
+    });
+}
+
+
+
+
+
