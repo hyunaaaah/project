@@ -68,6 +68,7 @@ $('.perfume-info').on('click', function () {
     var clickIndex = $(this).index();
 
     $('.detail-view').addClass('info-detail-view');
+
     var perfumeIntro = require('../template/introduce.hbs');
     var color = perfumeListImg[clickIndex].color;
     var detail = perfumeIntro(perfumeListImg[clickIndex]);

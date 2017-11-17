@@ -16,7 +16,7 @@ $('.note-contents').append(noteTemplate(noteData[0]));
 
 function noteDataInsert() {
     $('.note-btns > li').on('click', function () {
-        if ($(this).attr('id') === 'type') {
+        if ($(this).attr('id') === 'type' && $('.type-contents').empty()) {
             $('.type-contents').addClass('active');
             $('.note-contents').empty();
             $('.division-contents').empty();
@@ -84,6 +84,7 @@ $('.type-btns').on('click', function () {
 
 function typeSelect() {
     var typeData = require('../template/typeInfo.hbs');
+
     $('.type-contents').append(typeData);
 
     $('.type-btns').on('click', function () {
