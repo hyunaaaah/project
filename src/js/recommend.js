@@ -85,3 +85,4 @@ $('.detail-view').on('click', function () {
 
     $('.perfume-list').css('opacity', '1.0');
 });
+
