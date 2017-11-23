@@ -42,9 +42,16 @@ function perfumeColor() {
 
 perfumeColor();
 
+/*
 $('.choice').on('click', function () {
     location.href = './recommend.html';
 });
+*/
+
+$('.choice').on('click', function () {
+   console.log($(this).attr('id'));
+});
+// id 마다 다른 향수 조회 창이 나오도록하기
 
 $('.logo').on('click', function () {
     location.href = './';
