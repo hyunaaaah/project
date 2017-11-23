@@ -54,7 +54,6 @@ $('.detail-layer').on('click', function () {
     $('.detail-layer').removeClass('layer');
 });
 
-
 function imgList() {
     for(var i=0; i<perfumeListImg.length; i++) {
         var perfumeList = perfumeListTemplate(perfumeListImg[i]);
