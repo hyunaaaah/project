@@ -42,16 +42,21 @@ function perfumeColor() {
 
 perfumeColor();
 
-/*
+// id 마다 다른 향수 조회 창이 나오도록하기
+
 $('.choice').on('click', function () {
     location.href = './recommend.html';
 });
-*/
 
+/*
 $('.choice').on('click', function () {
    console.log($(this).attr('id'));
 });
-// id 마다 다른 향수 조회 창이 나오도록하기
+*/
+
+$('.share-info').on('click', function () {
+   location.href = './share.html';
+});
 
 $('.logo').on('click', function () {
     location.href = './';

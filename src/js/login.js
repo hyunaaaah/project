@@ -1,6 +1,7 @@
-require('../less/login.less')
+require('../less/login.less');
 require('../js/main');
 
+//로그인과 회원가입 탭 선택 기능
 $('.member > li').on('click', function () {
     if ($(this).hasClass('join-form')) {
         $('.member-login-form').removeClass('active');
@@ -17,3 +18,4 @@ $('.member > li').on('click', function () {
         $('.login-form').css('opacity', '1.0');
     }
 });
+

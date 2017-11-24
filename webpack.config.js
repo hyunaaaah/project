@@ -23,8 +23,8 @@ const pages = [{
     html: 'info',
     script: 'info'
 }, {
-    html: 'perfumeInfo',
-    script: 'perfumeInfo'
+    html: 'share',
+    script: 'share'
 }];
 
 module.exports = {
