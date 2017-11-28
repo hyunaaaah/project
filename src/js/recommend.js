@@ -5,8 +5,7 @@ var URLSearchParams = require('url-search-params');
 var params = new URLSearchParams(location.search);
 var perfumeID = params.get('id');
 
-var perfumeListTemplate = require('../template/list.hbs');
-var perfumeListImg = require('./list/perfumeLists');
+
 
 var selectTemplate = require('../template/detailSelect.hbs');
 var brandList = require('./list/listDetail');
@@ -57,6 +56,11 @@ $('.detail-layer').on('click', function () {
     $('.detail-select').empty();
     $('.detail-layer').removeClass('layer');
 });
+
+var perfumeListTemplate = require('../template/list.hbs');
+var perfumeListImg = require('./list/perfumeLists');
+var missDiorListImg = require('./list/missDiorLists');
+var jadoreListImg = require('./list/jadoreLists');
 
 function imgList() {
     for(var i=0; i<perfumeListImg.length; i++) {
