@@ -55,7 +55,7 @@ $('.choice').on('click', function () {
 */
 
 $('.share-info').on('click', function () {
-   location.href = './share.html';
+   location.href = './board.html';
 });
 
 $('.logo').on('click', function () {

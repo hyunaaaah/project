@@ -1,6 +1,7 @@
-require('../less/share.less');
+require('../less/board.less');
+require('../js/main');
 
-$(function() {
+function perfumeBoard() {
     var currentPage = 1;
     var rowsPerPage = 5;
     var pagesToShow = 2;
@@ -410,4 +411,6 @@ $(function() {
     });
 
     changeSection('list', true);
-});
+}
+
+perfumeBoard();

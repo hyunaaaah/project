@@ -1,8 +1,12 @@
 require('../less/recommend.less');
 require('../js/main');
 
+var URLSearchParams = require('url-search-params');
+var params = new URLSearchParams(location.search);
+var perfumeID = params.get('id');
+
 var perfumeListTemplate = require('../template/list.hbs');
-var perfumeListImg = require('../js/list/listIMG');
+var perfumeListImg = require('./list/perfumeLists');
 
 var selectTemplate = require('../template/detailSelect.hbs');
 var brandList = require('./list/listDetail');
@@ -62,6 +66,27 @@ function imgList() {
     }
 }
 imgList();
+
+/*
+$.ajax({
+    url: '/api/perfume/' + perfumeID ,
+    success: function (result) {
+        console.log(result);
+    }
+});
+*/
+
+function initImage(model) {
+    var images = model.image;
+    for(var i=0; i<images.length; i++) {
+        var perfumeList = perfumeListTemplate(images[i]);
+
+        $('.perfume-list').append(perfumeList);
+    }
+}
+//initImage();
+
+
 
 $('.perfume-info').on('click', function () {
     var clickIndex = $(this).index();

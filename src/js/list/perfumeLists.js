@@ -9,7 +9,8 @@ module.exports = [{
     '         손목의 맥박이 뛰는 부위에 1~2방울 떨어뜨린 후<br>' +
     '         여러분이 선택한 쟈도르 향수를 뿌립니다.',
     image: 'Dior/jadore-DTP.jpg',
-    color: 'skyblue',
+    imgId: 'dior_ja_p',
+    color: 'rgb(206, 95, 75)',
     source: 'www.dior.com'
 }, {
     name: '쟈도르 오 드 퍼퓸',
@@ -21,7 +22,8 @@ module.exports = [{
     summary: '고결한 플로랄 노트의 정수, 그라스산 그랜디플로럼 자스민은 향수에 달콤하면서도<br>' +
     '         유쾌한 액센트를 부여하는 과일 향과 태양 빛으로 물든 섬세한 관능미를 발산합니다.',
     image: 'Dior/jadore-EDP.jpg',
-    color: 'skyblue',
+    imgId: 'dior_ja_edp',
+    color: 'rgb(206, 95, 75)',
     source: 'www.dior.com'
 }, {
     name: '쟈도르 압솔뤼 오 드 퍼퓸',
@@ -34,7 +36,8 @@ module.exports = [{
     '         이 두 가지 앱솔루트와 함께 바닐라가 더해져 강인한 매력을 유지하면서도 부드러움을 선사합니다.<br>' +
     '         순백의 아름다움이 돋보이는 튜버로즈는 쉼 없는 열정으로 자극합니다. ',
     image: 'Dior/jadore absoul-EDP.jpg',
-    color: 'skyblue',
+    imgId: 'dior_ja_ab_edp',
+    color: 'rgb(206, 95, 75)',
     source: 'www.dior.com'
 }, {
     name: '쟈도르 로르',
@@ -47,7 +50,8 @@ module.exports = [{
     '         인디안 튜베로즈의 플로럴 앱솔루트가 조화롭게 어우러져<br>' +
     '         강렬하고 관능적인 향을 선사합니다.',
     image: 'Dior/jadore-re.jpg',
-    color: 'skyblue',
+    imgId: 'dior_ja_re',
+    color: 'rgb(206, 95, 75)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 블루밍 부케',
@@ -59,7 +63,8 @@ module.exports = [{
     '         부드러운 화이트 머스크 노트가 시처럼 아름다운 잔향을 감싸 안습니다.<br>' +
     '         매력적이고 활기찬 미스 디올을 위한 봄의 기운이 느껴지는 플로랄 향기를 느껴보세요.',
     image: 'Dior/missDior-bouque.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_bou',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 앱솔루틀리 블루밍 오 드 퍼퓸',
@@ -69,7 +74,8 @@ module.exports = [{
     '         그라스산 로즈와 다마스크 로즈의 절묘한 조합의 하트노트는 화이트 머스크 베이스 노트로 잔잔하게 마무리됩니다.<br>' +
     '         미소를 머금게 하는 하모니의 향수입니다. ',
     image: 'Dior/missDior absoul-EDP.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_ab_edp',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 오 드 뚜왈렛',
@@ -78,7 +84,8 @@ module.exports = [{
     summary: '스파클링한 블러드 오렌지가 튀니지아산 네롤리와 다마스크 로즈 에센스를 빛나게 만듭니다.<br>' +
     '         향기에 특별함을 더하는 인도네시아산 패츌리로 더욱 빛나는 조화를 만나보세요. ',
     image: 'Dior/missDior-EDT.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_edt',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 오 드 퍼퓸',
@@ -89,7 +96,8 @@ module.exports = [{
     '         칼라브리아산 베르가못이 산뜻함을 더해줍니다. 프랑스 기아나산 로즈우드와 레위니옹 섬의 핑크 페퍼는 향수에 특별함을 선사합니다. ' +
     '         마주한 순간 사랑에 빠질 수밖에 없는 미스 디올.',
     image: 'Dior/missDior-EDP.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_edp',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 르 퍼퓸',
@@ -99,7 +107,8 @@ module.exports = [{
     '         그라스산 로즈 앱솔루트로 대표되는 하트 노트가 튀니지아산 오렌지 블라썸 앱솔루트와 만나 향기를 발산합니다. ' +
     '         산뜻한 시칠리아산 만다린과 이 향수의 매혹적인 여성미를 드러내 주는 따뜻한 바닐라 노트가 멋진 잔향을 만들어냅니다.',
     image: 'Dior/missDior-re-perfume.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_re',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 엑스트레 드 빠르펭',
@@ -110,7 +119,8 @@ module.exports = [{
     '         <span>middle note</span><div>이집트 쟈스민 앱솔루트</div>' +
     '         <span>base note</span><div>인도네시안 패츌리 에센스</div>',
     image: 'Dior/missDior-extra.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_ex',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 오리지날 오 드 뚜왈렛',
@@ -122,7 +132,8 @@ module.exports = [{
     '         패츌리 에센스는 예상치 못한 특별한 향기를 선사하고, 갈바늄의 극도로 우아한 노트는 자스민, 그라스 로즈 앱솔루트의 플로럴 하트와 어우러져 ' +
     '         최상의 산뜻함을 선사합니다. ',
     image: 'Dior/missDior-origin-EDT.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_ori_edt',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }, {
     name: '미스 디올 오리지날 엑스트레 드 빠르펭',
@@ -133,6 +144,7 @@ module.exports = [{
     '          자스민, 그라스 로즈 앱솔루트의 플로럴 하트와 어우러져 최상의 산뜻함을 선사합니다.',
     note: '',
     image: 'Dior/missDior-origin-extra.jpg',
-    color: 'orange',
+    imgId: 'dior_mi_ori_ex',
+    color: 'rgb(228, 216, 190)',
     source: 'www.dior.com'
 }];
